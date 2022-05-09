@@ -1,1 +1,91 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  background: #fafafa;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+  color: black;
+  margin: 15px auto;
+}
+
+.textarea {
+  display: block;
+  width: 800px;
+  height: 200px;
+  font-size: 18px;
+  color: #545454;
+  margin: 0 auto;
+  border-radius: 9px;
+  overflow: auto;
+  resize: none;
+}
+
+.description {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.keyboard {
+  height: 340px;
+  width: 840px;
+  background: #fafafa;
+  margin: 15px auto;
+  border-radius: 9px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+  width: 800px;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.key {
+  width: 44px;
+  height: 44px;
+  border: 2px black solid;
+  background: #c4c4c4;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 9px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.active {
+  background: #545454;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Backspace, .Enter, .CapsLock, .ShiftRight, .ShiftLeft {
+  width: 12%;
+}
+
+.Tab {
+  width: 10%;
+}
+
+.Space {
+  width: 48%;
+}
+/*# sourceMappingURL=style.css.map */
