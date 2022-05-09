@@ -267,68 +267,68 @@ export default [
     },
     {
       KeyZ: {
-        en: { shift: '', down: 'z', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: 'Z', down: 'z', caps: 'Z' },
+        ru: { shift: 'Я', down: 'я', caps: 'Я' },
       },
     },
     {
       KeyX: {
-        en: { shift: '', down: 'x', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: 'X', down: 'x', caps: 'X' },
+        ru: { shift: 'Ч', down: 'ч', caps: 'Ч' },
       },
     },
     {
       KeyC: {
-        en: { shift: '', down: 'c', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: 'C', down: 'c', caps: 'C' },
+        ru: { shift: 'С', down: 'с', caps: 'С' },
       },
     },
     {
       KeyV: {
-        en: { shift: '', down: 'v', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: 'V', down: 'v', caps: 'V' },
+        ru: { shift: 'М', down: 'м', caps: 'М' },
       },
     },
     {
       KeyB: {
-        en: { shift: '', down: 'b', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: 'B', down: 'b', caps: 'B' },
+        ru: { shift: 'И', down: 'и', caps: 'И' },
       },
     },
     {
       KeyN: {
-        en: { shift: '', down: 'n', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: 'N', down: 'n', caps: 'N' },
+        ru: { shift: 'Т', down: 'т', caps: 'Т' },
       },
     },
     {
       KeyM: {
-        en: { shift: '', down: 'm', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: 'M', down: 'm', caps: 'M' },
+        ru: { shift: 'Ь', down: 'ь', caps: 'Ь' },
       },
     },
     {
       Comma: {
-        en: { shift: '', down: ',', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: '<', down: ',', caps: ',' },
+        ru: { shift: 'Б', down: 'б', caps: 'Б' },
       },
     },
     {
       Period: {
-        en: { shift: '', down: '.', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: '>', down: '.', caps: '.' },
+        ru: { shift: 'Ю', down: 'ю', caps: 'Ю' },
       },
     },
     {
       Slash: {
-        en: { shift: '', down: '/', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: '?', down: '/', caps: '/' },
+        ru: { shift: ',', down: '.', caps: '.' },
       },
     },
     {
       ArrowUp: {
-        en: { shift: '', down: '', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: '↑', down: '↑', caps: '↑' },
+        ru: { shift: '↑', down: '↑', caps: '↑' },
       },
     },
     {
@@ -371,20 +371,20 @@ export default [
     },
     {
       ArrowLeft: {
-        en: { shift: '', down: '', caps: '' },
+        en: { shift: '←', down: '←', caps: '←' },
         ru: { shift: '', down: '', caps: '' },
       },
     },
     {
       ArrowDown: {
-        en: { shift: '', down: '', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: '↓', down: '↓', caps: '↓' },
+        ru: { shift: '↓', down: '↓', caps: '↓' },
       },
     },
     {
       ArrowRight: {
-        en: { shift: '', down: '', caps: '' },
-        ru: { shift: '', down: '', caps: '' },
+        en: { shift: '→', down: '→', caps: '→' },
+        ru: { shift: '→', down: '→', caps: '→' },
       },
     },
     {

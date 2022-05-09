@@ -4,9 +4,12 @@ export default class Keyboard {
   constructor() {
     this.value = null;
     this.capslock = false;
-    this.shiftR = false;
+    this.shift = false;
     this.ctrlR = false;
     this.altL = false;
+    this.down = [];
+    this.caps = [];
+    this.shiftArr = [];
   }
 
   init() {
@@ -62,10 +65,26 @@ export default class Keyboard {
     });
   }
 
+  getStorage(keyData_) {
+    keyData_.forEach((item) => {
+      for (let j = 0; j < item.length; j += 1) {
+        const classKey = Object.entries(item[j]);
+        const objKey = classKey[0][1];
+        // console.log(objKey.en.caps);
+        this.down.push(`${objKey.en.down}`);
+        this.caps.push(`${objKey.en.caps}`);
+        this.shiftArr.push(`${objKey.en.shift}`);
+      }
+    });
+  }
+
   switchCapsLock() {
     this.capslock = !this.capslock;
   }
 
+  switchShift() {
+    this.shift = !this.shift;
+  }
   /* pressKey() {
         console.log(this.code);
         let code = event.code;
