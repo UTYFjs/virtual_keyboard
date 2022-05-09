@@ -49,9 +49,12 @@ const config = {
             inject: 'body',
 
         }),
-
-        new CleanWebpackPlugin(),
-
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: [
+                '**/*',
+                '!.git',
+            ],
+        }),
         //new CopyPlugin({
           //  patterns: [
             //  { from: "source", to: "dest" },
