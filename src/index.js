@@ -2,12 +2,6 @@ import './style/style.css';
 import keyData from './keyData';
 import Keyboard from './keyboard';
 
-// console.log(keyData);
-
-// document.onkeydown = function (event) {
-//  console.log(event);
-// };
-
 const keyboard = new Keyboard();
 keyboard.init();
 
@@ -22,10 +16,6 @@ function changeLanguage() {
       keys[i].textContent = keyboard.caps[i];
     } else { keys[i].textContent = keyboard.down[i]; }
   }
-  // keys.forEach((key, i) => {
-  // if(keyboard.capslock) {key.textContent = keyboard.caps[i]
-  // } else {key.textContent = keyboard.down[i];}
-  // });
 }
 function changeShift() {
   const keys = document.querySelectorAll('.key');
@@ -35,15 +25,10 @@ function changeShift() {
       keys[i].textContent = keyboard.shiftArr[i];
     } else { keys[i].textContent = keyboard.down[i]; }
   }
-  // keys.forEach((key, i) => {
-  // if(keyboard.capslock) {key.textContent = keyboard.caps[i]
-  // } else {key.textContent = keyboard.down[i];}
-  // });
 }
 keyboard.getStorage(keyData);
 
 main.addEventListener('mousedown', (event) => {
-  // main.forEach( (key) => )
   textArea.focus();
   const currentKey = document.querySelector(`.${event.target.dataset.code}`);
   switch (currentKey.textContent) {
@@ -182,4 +167,4 @@ document.addEventListener('keyup', (event) => {
       break;
     default: currentKey.classList.remove('active');
   }
-})
+});

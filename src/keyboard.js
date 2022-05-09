@@ -28,7 +28,6 @@ export default class Keyboard {
     document.body.append(description);
 
     this.createKeys(keyData);
-    // this.pressKey();
   }
 
   createKeys(keyData_) {
@@ -44,22 +43,14 @@ export default class Keyboard {
         const key = document.createElement('div');
         const classKey = Object.entries(item[j]);
 
-        // console.log(classKey[0][0]);
-        // let strClass = String(classKey[0]);
-        // console.log(strClass);
-        // const code = classKey[0][0];
-        // item[j].code.ru.down;
         key.classList.add('key', `${classKey[0][0]}`);
         key.setAttribute('data-code', `${classKey[0][0]}`);
-        // const charEn = Object.entries(item[j]);
         const objKey = classKey[0][1];
         if (this.capslock === false) {
           key.innerText = `${objKey.en.down}`;
         } else {
           key.innerText = `${objKey.en.caps}`;
         }
-
-        // key.innerText = `${classKey[0][0]}`;
         row.append(key);
       }
     });
@@ -70,7 +61,6 @@ export default class Keyboard {
       for (let j = 0; j < item.length; j += 1) {
         const classKey = Object.entries(item[j]);
         const objKey = classKey[0][1];
-        // console.log(objKey.en.caps);
         this.down.push(`${objKey.en.down}`);
         this.caps.push(`${objKey.en.caps}`);
         this.shiftArr.push(`${objKey.en.shift}`);
@@ -85,11 +75,4 @@ export default class Keyboard {
   switchShift() {
     this.shift = !this.shift;
   }
-  /* pressKey() {
-        console.log(this.code);
-        let code = event.code;
-        console.log(code);
-        document.querySelector(`${'.' + code}`).classList.add('.active');
-
-    } */
 }
