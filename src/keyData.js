@@ -3,7 +3,7 @@ export default [
     {
       Backquote: {
         en: { shift: '~', down: '`', caps: '`' },
-        ru: { shift: 'Ё', down: 'ё', caps: '' },
+        ru: { shift: 'Ё', down: 'ё', caps: 'Ё' },
       },
     },
     {
@@ -372,7 +372,7 @@ export default [
     {
       ArrowLeft: {
         en: { shift: '←', down: '←', caps: '←' },
-        ru: { shift: '', down: '', caps: '' },
+        ru: { shift: '←', down: '←', caps: '←' },
       },
     },
     {
