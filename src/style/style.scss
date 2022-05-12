@@ -1,0 +1,76 @@
+body{
+    background: #fafafa;
+    max-width: 1280px;
+    margin: 0 auto;
+    }
+h1{
+    font-size: 55px;
+    text-align: center;
+    color: black;
+    margin: 15px auto;
+}
+.textarea{
+    display: block;
+    width: 800px;
+    height: 200px;
+    font-size: 18px;
+    color: #545454;
+    margin: 0 auto;
+    border-radius: 9px;
+    overflow: auto;
+    resize: none;
+}
+.description{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+.keyboard{
+    
+    height: 340px;
+    width: 840px;
+    background: #fafafa;
+    margin: 15px auto;
+    border-radius: 9px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    width: 800px;
+    height: 50px;
+    margin: 10px auto;
+    
+
+}
+
+.key {
+    width: 44px;
+    height: 44px;
+    border: 2px black solid;
+    background: #c4c4c4;
+
+    text-align: center;
+    line-height: 40px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.4);
+    transition: all 0.3s;
+}
+.active{
+     background: #545454;
+     border-radius: 50%;
+     transition: all 0.3s;
+}
+.Backspace, .Enter, .CapsLock, .ShiftRight, .ShiftLeft{
+    width: 12%;
+}
+.Tab{
+    width: 10%;
+}
+.Space{
+    width: 48%;
+}
